@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #fff3e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main form box */
+.form-container {
+    background-color: #ffe082; 
+    padding: 35px 45px;
+    width: 420px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Headings / Labels */
+label {
+    display: block;
+    color: #d84315; 
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #ffab40; 
+    margin-bottom: 12px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6d00; 
+}
+
+/* Gender box */
+.gender-options {
+    background-color: #ffd54f; 
+    border: 2px solid #ffa000; 
+    padding: 8px;
+    border-radius: 6px;
+    margin: 10px 0 18px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gender-options label {
+    color: #bf360c; 
+    font-weight: normal;
+}
+
+/* Interests box */
+.hobbies-options {
+    background-color: #ffd54f; 
+    border: 2px solid #ffa000;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hobbies-options label {
+    color: #bf360c;
+    font-weight: normal;
+}
+
+/* Register button */
+.submit-btn {
+    background-color: #ff6f00; 
+    color: #ffffff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #e65100; 
+    transform: scale(1.05);
+}

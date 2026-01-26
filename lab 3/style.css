@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.top-nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0 15px;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background: #3ba07e;
+    outline: 1px solid #080808;
+    padding: 15px;
+    border: 1px solid #ddd;
+
+}
+
+.products {
+    width: 60%;
+    background-color: #;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.product-box {
+    height: 150px;
+    background: #50559b;
+    border: 1px solid #ddd;
+    outline: 1px solid #080808;
+    border: 8px solid rgb(243, 243, 157);  
+    padding: 15px;
+    background-color: rgb(73, 103, 160);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discount-circle {
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    background-color: yellow;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+...............................

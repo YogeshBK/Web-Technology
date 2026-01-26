@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Project Table (Div Based)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        .table {
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        .row {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+
+        .header {
+            background-color: #008000;;
+            font-weight: bold;
+            text-align: center;
+        }
+	.row1 {
+	    background-color: #ffdab9;
+        }
+
+	.row2 {
+	    background-color: #f5c6cb;
+        }
+
+	.row3 {
+	    background-color: #d1ecf1;
+        }
+
+	.row4 {
+	    background-color: #fff3cd;
+        }
+	
+	
+
+        /* Cell */
+        .cell {
+            border-right: 1px solid black;
+            padding: 8px;
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Remove last border */
+        .row .cell:last-child {
+            border-right: none;
+        }
+
+        /* SN column smaller */
+        .sn {
+            flex: 0.5;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Student Project Details</h1>
+
+<div class="table">
+
+    <!-- Header -->
+    <div class="row header">
+        <div class="cell sn">S.N</div>
+        <div class="cell">Project Name</div>
+        <div class="cell">Student Name</div>
+        <div class="cell">Exam Roll Number</div>
+        <div class="cell">Remarks</div>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="row row1">
+        <div class="cell sn">1</div>
+        <div class="cell">Online Voting System</div>
+        <div class="cell">Siddhartha Shrestha</div>
+        <div class="cell">110</div>
+        <div class="cell">Excellent</div>
+    </div>
+    <div class="row row1">
+        <div class="cell sn"></div>
+        <div class="cell"></div>
+        <div class="cell">Sita Thapa</div>
+        <div class="cell">109</div>
+        <div class="cell"></div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="row row2">
+        <div class="cell sn">2</div>
+        <div class="cell">Library Management System</div>
+        <div class="cell">Rushel Basnet</div>
+        <div class="cell">103</div>
+        <div class="cell">Very Good</div>
+    </div>
+    <div class="row row2">
+        <div class="cell sn"></div>
+        <div class="cell"></div>
+        <div class="cell">Prunima Khanal</div>
+        <div class="cell">104</div>
+        <div class="cell"></div>
+    </div>
+  <!-- Project 3-->
+    <div class="row row3">
+        <div class="cell sn">3</div>
+        <div class="cell">Online Shopping System</div>
+        <div class="cell">Saugat Gurung</div>
+        <div class="cell">106</div>
+        <div class="cell">Very Good</div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="row row4">
+        <div class="cell sn">4</div>
+        <div class="cell">Student Result System</div>
+        <div class="cell">Ridam Karki</div>
+        <div class="cell">105</div>
+        <div class="cell">Good</div>
+    </div>
+
+  
+    <div class="row row4">
+        <div class="cell sn"></div>
+        <div class="cell"></div>
+        <div class="cell">Susmita Bhujel</div>
+        <div class="cell">107</div>
+        <div class="cell"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Total Projects: 4 &nbsp; | &nbsp; Total Students: 7
+    </div>
+
+</div>
+
+</body>
+</html>
