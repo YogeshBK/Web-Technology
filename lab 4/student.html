@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+
+<h3>Student Project Details</h3>
+<p id="result"></p>
+
+<script>
+    // JavaScript code is written here directly
+    let student = {
+        name: prompt("Enter Student Name"),
+        roll: prompt("Enter Roll Number"),
+        department: prompt("Enter Department"),
+        project: prompt("Enter Project Title")
+    };
+
+    document.getElementById("result").innerHTML = `
+        Name: ${student.name} <br>
+        Roll No: ${student.roll} <br>
+        Department: ${student.department} <br>
+        Project Title: ${student.project}
+    `;
+</script>
+
+</body>
+</html>

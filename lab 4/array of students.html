@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Students</title>
+</head>
+<body>
+
+<h2>Student Details</h2>
+<pre id="output"></pre>
+
+<script>
+    let students = [];
+
+    function addStudents() {
+        let more = true;
+
+        while(more) {
+            let student = {
+                name: prompt("Enter Student Name:"),
+                roll: prompt("Enter Roll Number:"),
+                department: prompt("Enter Department:"),
+                project: prompt("Enter Project Title:")
+            };
+
+            students.push(student);
+
+            more = confirm("Do you want to enter more students?");
+        }
+    }
+
+    addStudents();
+
+    let result = "Student List:\n\n";
+
+    for(let i = 0; i < students.length; i++) {
+        result += "Student " + (i+1) + "\n";
+        result += "Name: " + students[i].name + "\n";
+        result += "Roll: " + students[i].roll + "\n";
+        result += "Department: " + students[i].department + "\n";
+        result += "Project: " + students[i].project + "\n\n";
+    }
+
+    document.getElementById("output").textContent = result;
+</script>
+
+</body>
+</html>
