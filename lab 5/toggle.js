@@ -1,4 +1,3 @@
-// Global variable to track current mode
 let currentMode = "";
 
 // Set a cookie
@@ -33,21 +32,14 @@ function applyMode(mode) {
 
 // Toggle mode
 function toggleMode() {
-    // Toggle the variable
     currentMode = (currentMode === "dark") ? "light" : "dark";
-
-    // Apply immediately
     applyMode(currentMode);
-
-    // Save to cookie
     setCookie("mode", currentMode, 7);
 }
 
-// On page load
 window.onload = function() {
-    // Get saved mode from cookie
     currentMode = getCookie("mode") || "light";
 
-    // Apply mode
     applyMode(currentMode);
+
 }
