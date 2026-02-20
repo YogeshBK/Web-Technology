@@ -1,4 +1,3 @@
-// Arrow function that returns Fibonacci series as an ARRAY
 const fibonacci = (n) => {
     let series = [];
     let a = 0, b = 1;
@@ -22,4 +21,5 @@ function handleEnter(event) {
         document.getElementById("output").innerHTML =
             "Fibonacci Array: [" + resultArray.join(", ") + "]";
     }
+
 }
