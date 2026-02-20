@@ -1,15 +1,14 @@
-let countdown; // variable to store setInterval
+let countdown; 
 
 function startTimer() {
-    clearInterval(countdown); // clear any existing timer
+    clearInterval(countdown); 
 
-    let time = 5 * 60; // 5 minutes in seconds
+    let time = 5 * 60;
 
     countdown = setInterval(function() {
         let minutes = Math.floor(time / 60);
         let seconds = time % 60;
 
-        // Format with leading zeros
         let displayMinutes = minutes < 10 ? '0' + minutes : minutes;
         let displaySeconds = seconds < 10 ? '0' + seconds : seconds;
 
@@ -22,4 +21,5 @@ function startTimer() {
 
         time--;
     }, 1000);
+
 }
