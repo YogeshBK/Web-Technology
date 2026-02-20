@@ -3,7 +3,7 @@ function validateForm() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
-    // Name: at least 3 characters and no numbers
+    // Name validation
     let namePattern = /^[A-Za-z ]+$/;
     if (name.length < 3 || !namePattern.test(name)) {
         alert("Name must be at least 3 characters and contain no numbers.");
@@ -26,4 +26,5 @@ function validateForm() {
 
     alert("Registration Successful!");
     return true;
+
 }
